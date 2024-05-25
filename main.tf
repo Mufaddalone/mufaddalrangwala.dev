@@ -14,6 +14,14 @@ resource "aws_security_group" "allow_ssh" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = "HTTP"
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -23,7 +31,7 @@ resource "aws_security_group" "allow_ssh" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-0cbe318e714fc9a82"  # Change to your preferred AMI ID
+  ami           = "ami-08012c0a9ee8e21c4"  # Change to your preferred AMI ID
   instance_type = "t2.micro"
   key_name      = "website"  # Reference the existing key pair name
 
