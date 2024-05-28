@@ -34,6 +34,9 @@ const path = Astro.url.pathname.length == 1 ? "" : Astro.url.pathname;
           <a href="/now" class={activeNav === "now" ? "active" : ""}>/now</a>
         </li>
         <li>
+          <a href="/projects" class={activeNav === "projects" ? "active" : ""}>/projects</a>
+        </li>
+        <li>
           <a href="/contact" class={activeNav === "contact" ? "active" : ""}>/contact</a>
         </li>
         <!-- Since I only have 2 posts rn. I'm disabling the posts tab. Will enable this later.

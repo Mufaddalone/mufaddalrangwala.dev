@@ -1,5 +1,6 @@
+
 provider "aws" {
-  region = "us-west-1"
+  region = "ca-central-1"
 }
 
 resource "aws_security_group" "allow_ssh" {
@@ -30,14 +31,13 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-08012c0a9ee8e21c4"  # Change to your preferred AMI ID
-  instance_type = "t2.micro"
-  key_name      = "website"  # Reference the existing key pair name
-
+resource "aws_instance" "ec2fromami" {
+  ami           = "ami-05e86465a5325c170"  # Replace this with your AMI ID
+  instance_type = "t2.micro"               # Example instance type, choose according to your requirements
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
-
+  
   tags = {
-    Name = "website"
+    Name = "website"  # You can customize the name tag
   }
 }
+
