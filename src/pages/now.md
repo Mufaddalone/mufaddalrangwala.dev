@@ -50,20 +50,6 @@ Mumbai, India
 - Optimized front-end performance – 30% improvement across browsers!
 - Streamlined deployment – 40% reduction in deployment time!
 
-## 🛠️ Projects: My Digital Playground
-
-**MediChain | Solidity, IPFS**
-- Deployed smart contracts on Ethereum
-- Implemented encryption in IPFS – 35% reduction in data breaches!
-
-**Pin IT | MERN Stack**
-- Real-time note organization platform with web sockets
-- Agile methodologies – 30% increase in productivity!
-
-**Engineering Hub | Java, Firebase**
-- Android app for university subjects
-- Real-time note sharing – 20% surge in user engagement!
-
 ## ❤️ DevOps and Cloud Passion
 
 I’m a DevOps enthusiast with a heart that beats for AWS, Terraform, and all things cloud. I thrive on optimizing pipelines, automating workflows, and making systems robust and scalable. My dream is to master the art of Infrastructure as Code and bring efficiency to new heights!
