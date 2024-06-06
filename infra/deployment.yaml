@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mufaddal-info-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mufaddal-info
+  template:
+    metadata:
+      labels:
+        app: mufaddal-info
+    spec:
+      containers:
+      - name: mufaddal-info-container
+        image: mufaddal16/mufaddalx86:latest
+        imagePullPolicy: Always  
+        ports:
+        - containerPort: 80

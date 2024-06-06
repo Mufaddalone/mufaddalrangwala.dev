@@ -1,0 +1,8 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: mufaddal-info-cert
+spec:
+  domains:
+    - mufaddal.info
+    - www.mufaddal.info
